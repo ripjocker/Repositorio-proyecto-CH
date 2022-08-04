@@ -421,6 +421,31 @@ body p{
     height:auto;
     
     }
+ 
+.circle1, .circle2, .circle3{
+    width: 50px;
+    height: 40px;
+    margin: 200px;
+    border-radius: 50%;
+}   
 
+.circle1{
+    background-color: aqua;
+    transition: all 2.0s ease-out;
+}
 
+.circle2{
+    background-color: blueviolet;
+    transition: all 3.0s linear;
+}
 
+.circle3{
+    background-color: darkgoldenrod;
+    transition: all 4.0s ease-in-out;
+}
+
+.movimiento:hover .circle1,
+.movimiento:hover .circle2,
+.movimiento:hover .circle3{
+    transform: translate(1000px);
+}
